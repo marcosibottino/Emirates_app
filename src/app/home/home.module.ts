@@ -5,7 +5,8 @@ import { FormsModule } from '@angular/forms';
 import { HomePage } from './home.page';
 
 import { HomePageRoutingModule } from './home-routing.module';
-
+import { StartComponent } from '../start/start.component';
+import { SpinnerDialog } from '@ionic-native/spinner-dialog/ngx';
 
 @NgModule({
   imports: [
@@ -14,6 +15,7 @@ import { HomePageRoutingModule } from './home-routing.module';
     IonicModule,
     HomePageRoutingModule
   ],
-  declarations: [HomePage]
+  declarations: [HomePage],
+  providers: [SpinnerDialog]
 })
 export class HomePageModule {}
