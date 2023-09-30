@@ -1,0 +1,21 @@
+.nav-toolbar {
+    position: relative;
+    height: 55px;
+    
+    .back {
+        position: absolute;
+        width: 15%;
+        height: 60%;
+        top: 30%;
+        left: 2%;
+    }
+    
+    .profile {
+        position: absolute;
+        width: 10%;
+        right: 5%;
+        border-radius: 100%;
+        top: 25%;
+        box-shadow: 0px 1px 5px var(--ion-color-secondary-shade);
+    }
+}
