@@ -8,8 +8,7 @@ import { QuestionsComponent } from './questions/questions.component';
 import { SkywardsComponent } from './skywards/skywards.component';
 import { ToolbarComponent } from '../toolbar/toolbar.component';
 import { IonicModule } from '@ionic/angular';
-
-
+// import { QRCodeModule } from 'angularx-qrcode';
 
 @NgModule({
   declarations: [
@@ -23,7 +22,8 @@ import { IonicModule } from '@ionic/angular';
   ],
   imports: [
     CommonModule,
-    IonicModule.forRoot()
+    IonicModule.forRoot(),
+    // QRCodeModule
     // FlightComponent,
     // EntretainmentComponent,
     // MapsComponent,

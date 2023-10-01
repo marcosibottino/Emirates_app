@@ -9,7 +9,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { StartComponent } from './start/start.component';
 import { SpinnerDialog } from '@ionic-native/spinner-dialog/ngx';
 import { ComponentsModule } from './components/components.module';
-
+// import {QRCodeModule} from 'angularx-qrcode';
 
 @NgModule({
   declarations: [AppComponent, StartComponent],
