@@ -1,0 +1,167 @@
+// font-family: 'Explora', cursive;
+// font-family: 'Spline Sans Mono', monospace;
+
+.header_container {
+    position: absolute;
+    width: 100%;
+    height: 25%;
+    background-image: linear-gradient( to right bottom, rgba(24,39,55,0.8), rgba(49,113,224,0.8)), url(../../../assets/img/emirates1.jpg);
+    z-index: -1; 
+    background-size: cover;
+    background-position: top;
+
+    .title-es {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 33%;
+        font-size: 36px;
+        color: var(--ion-color-secondary);
+        text-shadow: 0px 3px 5px var(--ion-color-primary);
+        font-family: "Explora", cursive;
+        font-weight: 600;
+    }
+}
+
+.header-row {
+    position: absolute;
+    width: 80%;
+    height: 105%;
+    background: var(--ion-color-secondary);
+    top: 68%;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 10px;
+    box-shadow: 0px 3px 5px black;
+
+    .disp {
+        position: absolute;
+        left: 5%;
+        top: 5%;
+        color: var(--ion-color-primary);
+        font-weight: 700;
+    }
+
+
+    .points {
+        position: absolute;
+        top: 12%;
+        left: 6%;
+        font-size: 23px;
+        color: ghostwhite;
+        text-shadow: 0px 3px 5px;
+    }
+
+    .movements {
+        position: absolute;
+        right: 2%;
+        top: 5%;
+        color: var(--ion-color-primary);
+        font-weight: 500;
+        display: flex;
+    }
+
+    .hr {
+        position: absolute;
+        width: 90%;
+        height: 0%;
+        top: 52%;
+        border: 0.1px solid black;
+        right: 5%;
+        opacity: 0.1;
+    }
+
+    .transference {
+    position: absolute;
+    bottom: 14%;
+    left: 9%;
+    width: 21%;
+    height: 30%;
+    /* background: white; */
+    // bordar-radius: 100%;
+    border-radius: 100%;
+    border: 2px solid var(--ion-color-primary);
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    }
+
+    .redeem {
+        position: absolute;
+        bottom: 14%;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 21%;
+        height: 30%;
+        border-radius: 100%;
+        border: 2px solid var(--ion-color-primary);
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    
+    .material-symbols-outlined {
+        color: var(--ion-color-primary);
+    }
+
+    .help {
+        position: absolute;
+        bottom: 14%;
+        right: 9%;
+        width: 21%;
+        height: 30%;
+        /* background: white; */
+        // bordar-radius: 100%;
+        border-radius: 100%;
+        border: 2px solid var(--ion-color-primary);
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .titles_services {
+        position: absolute;
+        bottom: 3%;
+        width: 100%;
+
+        .title_transfer {
+            position: absolute;
+            left: 10%;
+            color: var(--ion-color-primary);
+            font-weight: 600;
+            bottom: 1px;
+        }
+
+        .title_redeem {
+            position: absolute;
+            left: 50%;
+            color: var(--ion-color-primary);
+            font-weight: 600;
+            bottom: 1px;
+            transform: translateX(-50%);        
+        }
+
+        .title_help {
+            position: absolute;
+            right: 14%;
+            color: var(--ion-color-primary);
+            font-weight: 600;
+            bottom: 1px;
+        }
+    }
+}
+
+.adverticing {
+    position: absolute;
+    top: 48%;
+    left: 10%;
+    width: 80%;
+    height: 12%;
+    /* background: white; */
+    border-radius: 10px;
+    border: 2px solid var(--ion-color-secondary-shade);
+}

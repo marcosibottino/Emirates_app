@@ -26,3 +26,6 @@ Una vez que se han instalado todas las dependencias, puede ejecutar el servidor 
 Esto iniciará un servidor local y abrirá la aplicación en su navegador web predeterminado. La aplicación se recargará automáticamente cada vez que realice cambios en el código fuente.
 
 [Work In Progress...]
+
+user123
+pass123
