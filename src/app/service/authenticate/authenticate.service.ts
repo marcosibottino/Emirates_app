@@ -11,6 +11,9 @@ export class AuthenticateService {
 
   public currentUser: any = null;
 
+  user?: string;
+  pass?: string;
+
   constructor(
     private loadingController: LoadingController,
     private toastController: ToastController,
@@ -20,6 +23,8 @@ export class AuthenticateService {
     async onLogin(user: string, pass: string){
       for(const p of person){
         if (user === p.user && pass === p.pass) {
+          this.user = user;
+          this.pass = pass;
           const toast = await this.toastController.create({
             message: 'Welcome to Emirates',
             duration: 3000,

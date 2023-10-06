@@ -8,6 +8,7 @@ import { ContactComponent } from './components/contact/contact.component';
 import { QuestionsComponent } from './components/questions/questions.component';
 import { EntretainmentComponent } from './components/entretainment/entretainment.component';
 import { EditInformationComponent } from './components/edit-information/edit-information.component';
+import { AuthguardService } from './service/authguard/authguard.service';
 // import { ComponentsModule } from './components/components.module';
 
 
@@ -17,41 +18,49 @@ const routes: Routes = [
     loadChildren: () => import('./home/home.module').then( m => m.HomePageModule)
   },
   {
-    path: '',
+    path: '**',
     redirectTo: 'home',
     pathMatch: 'full'
   },
   {
     path: 'start',
-    component: StartComponent
+    component: StartComponent,
+    canActivate: [AuthguardService]
   },
   {
     path: 'flight',
-    component: FlightComponent
+    component: FlightComponent,
+    canActivate: [AuthguardService]
   },
   {
     path: 'skywards',
-    component: SkywardsComponent
+    component: SkywardsComponent,
+    canActivate: [AuthguardService]
   },
   {
     path: 'maps',
-    component: MapsComponent
+    component: MapsComponent,
+    canActivate: [AuthguardService]
   },
   {
     path: 'contact',
-    component: ContactComponent
+    component: ContactComponent,
+    canActivate: [AuthguardService]
   },
   {
     path: 'questions',
-    component: QuestionsComponent
+    component: QuestionsComponent,
+    canActivate: [AuthguardService]
   },
   {
     path: 'entretainments',
-    component: EntretainmentComponent
+    component: EntretainmentComponent,
+    canActivate: [AuthguardService]
   },
   {
     path: 'edit_info',
-    component: EditInformationComponent
+    component: EditInformationComponent,
+    canActivate: [AuthguardService]
   }
 ];
 
