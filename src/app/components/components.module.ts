@@ -22,7 +22,10 @@ import { IonicModule } from '@ionic/angular';
   ],
   imports: [
     CommonModule,
-    IonicModule.forRoot(),
+    IonicModule.forRoot(
+    // Habilitar el scroll en toda la aplicación
+    // scrollingEnabled: true
+    ),
     // QRCodeModule
     // FlightComponent,
     // EntretainmentComponent,
