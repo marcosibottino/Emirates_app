@@ -7,6 +7,7 @@ import { MapsComponent } from './components/maps/maps.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { QuestionsComponent } from './components/questions/questions.component';
 import { EntretainmentComponent } from './components/entretainment/entretainment.component';
+import { EditInformationComponent } from './components/edit-information/edit-information.component';
 // import { ComponentsModule } from './components/components.module';
 
 
@@ -47,6 +48,10 @@ const routes: Routes = [
   {
     path: 'entretainments',
     component: EntretainmentComponent
+  },
+  {
+    path: 'edit_info',
+    component: EditInformationComponent
   }
 ];
 

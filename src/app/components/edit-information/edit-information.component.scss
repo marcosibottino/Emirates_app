@@ -1,0 +1,108 @@
+.container {
+    position: absolute;
+    width: 80%;
+    height: 10%;
+    background: var(--ion-color-secondary);
+    top: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 10px;
+    box-shadow: 0px 3px 5px black;
+
+    .img_profile {
+        position: absolute;
+        width: 15%;
+        top: 19%;
+        left: 5%;
+        border-radius: 100%;
+        border: 1px solid black;
+        box-shadow: 0px 0px 4px black;
+    }
+
+    .name {
+        position: absolute;
+        left: 27%;
+        top: 31%;
+        font-size: 20px;
+        font-family: system-ui;
+        font-weight: 400;
+        color: var(--ion-color-primary);
+    }
+}
+
+.inputs-container {
+    position: relative;
+    // background: white;
+    top: 20%;
+    height: 75%;
+
+    .input-name {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 90%;
+
+    }
+
+    .input-lastname {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 90%;
+        top: 17%;
+    }
+
+    .input-mail {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 90%;
+        top: 34%;
+    }
+
+    .input-phone {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 90%;
+        top: 51%;
+    }
+
+    .input-oldpass {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 90%;
+        top: 68%;
+    }
+
+    .input-newpass {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 90%;
+        top: 85%;
+    }
+    
+    .placeholder {
+        position: absolute;
+        height: 46px;
+        width: 90%;
+        left: 50%;
+        transform: translateX(-50%);
+        background: none;
+        border: 1px solid var(--ion-color-secondary);
+        border-radius: 5px;
+        padding: 0px 0px 0px 10px;
+    }
+
+    .title {
+        position: relative;
+        left: 5%;
+        margin-bottom: 2%;
+        color: var(--ion-color-secondary);
+        font-family: "Explora", cursive;
+        font-weight: 600;
+        font-size: 25px;
+    }
+}

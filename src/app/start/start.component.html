@@ -2,13 +2,13 @@
   <img src="../../assets/img/logo_cortado.png" alt="">
 </div>
 <div class="header">
-  <ion-icon name="create-outline" class="edit" style="color: var(--ion-color-primary);"></ion-icon>
+  <ion-icon name="create-outline" class="edit" style="color: var(--ion-color-primary);" (click)="GoTo('edit_info')"></ion-icon>
   <ion-icon name="settings-outline" class="settings" style="color: var(--ion-color-primary);"></ion-icon>
   <div class="profile">
     <img class="img-profile" src="../../assets/img/profile.jpg" alt="">
   </div>
   <div class="namenshare">
-    <p class="name">Jessica Pearson</p>
+    <p class="name">{{dataUser?.userData.name + ' ' + dataUser?.userData.lastname}}</p>
     <button type="submit" class="share" disabled>Share Account</button>
   </div>
 </div>

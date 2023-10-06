@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { AuthenticateService } from '../service/authenticate/authenticate.service';
 
 @Component({
   selector: 'app-start',
@@ -8,9 +9,16 @@ import { Router } from '@angular/router';
 })
 export class StartComponent  implements OnInit {
 
-  constructor(private router: Router) { }
+  public dataUser: any;
 
-  ngOnInit() {}
+  constructor(
+    private router: Router,
+    private authenticateService: AuthenticateService
+    ) { }
+
+  ngOnInit() {
+    this.getDataUser();
+  }
 
   GoTo(route: string){
     switch(route){
@@ -32,6 +40,15 @@ export class StartComponent  implements OnInit {
       case 'questions':
         this.router.navigateByUrl('/questions')
       break;
-    }
+      case 'edit_info':
+        this.router.navigateByUrl('/edit_info')
+      break;
+      }
+  }
+
+  async getDataUser(){
+    const dataUser = await this.authenticateService.getCurrentUser();
+    this.dataUser = dataUser;
+    console.log('Datos de Usuario:', this.dataUser)
   }
 }
