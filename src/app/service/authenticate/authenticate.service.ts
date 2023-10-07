@@ -14,6 +14,8 @@ export class AuthenticateService {
   user?: string;
   pass?: string;
 
+  userLS: any;
+
   constructor(
     private loadingController: LoadingController,
     private toastController: ToastController,
@@ -35,8 +37,14 @@ export class AuthenticateService {
 
           this.currentUser = p;
 
+          localStorage.setItem('user', JSON.stringify(this.currentUser));
+          localStorage.setItem('userData', JSON.stringify(this.currentUser.userData))
+
+          this.userLS = localStorage.getItem('userData');
+          this.currentUser = JSON.parse(this.userLS);
+
           this.router.navigateByUrl('/start')
-          return; // Sale del bucle si las credenciales coinciden  }
+          return;
         } else {
             const toast = await this.toastController.create({
             message: 'Incorrect, try again.',
@@ -50,6 +58,9 @@ export class AuthenticateService {
   }
 
   getCurrentUser(){
+    console.log('====================================');
+    console.log('Usuario Obtenido LS: ', this.currentUser);
+    console.log('====================================');
     return this.currentUser;
   }
 }

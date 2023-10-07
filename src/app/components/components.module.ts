@@ -9,7 +9,9 @@ import { SkywardsComponent } from './skywards/skywards.component';
 import { ToolbarComponent } from '../toolbar/toolbar.component';
 import { IonicModule } from '@ionic/angular';
 import { EditInformationComponent } from './edit-information/edit-information.component';
+import { FormsModule } from '@angular/forms';
 // import { QRCodeModule } from 'angularx-qrcode';
+
 
 @NgModule({
   declarations: [
@@ -24,6 +26,7 @@ import { EditInformationComponent } from './edit-information/edit-information.co
   ],
   imports: [
     CommonModule,
+    FormsModule,
     IonicModule.forRoot(
     // Habilitar el scroll en toda la aplicación
     // scrollingEnabled: true

@@ -11,6 +11,8 @@ export class StartComponent  implements OnInit {
 
   public dataUser: any;
 
+  user: any;
+
   constructor(
     private router: Router,
     private authenticateService: AuthenticateService
@@ -47,8 +49,6 @@ export class StartComponent  implements OnInit {
   }
 
   async getDataUser(){
-    const dataUser = await this.authenticateService.getCurrentUser();
-    this.dataUser = dataUser;
-    console.log('Datos de Usuario:', this.dataUser)
+    this.dataUser = this.authenticateService.getCurrentUser();
   }
 }

@@ -2,34 +2,33 @@
 <ion-content>
   <div class="container">
     <img src="../../../assets/img/profile.jpg" class="img_profile">
-    <p class="name">Marcos Bottino</p>
-    <!-- <p class="mail">marcosibottino@outlook.com</p> -->
+    <p class="name">{{dataUser?.name}} {{dataUser?.lastname}}</p>
   </div>
-
   <div class="inputs-container">
     <div class="input-name">
       <p class="title">Name</p>
-      <input type="text" placeholder="Marcos" class="placeholder">
+      <input type="text" [(ngModel)]="dataUser.name" [placeholder]="dataUser.name" class="placeholder">
     </div>
     <div class="input-lastname">
       <p class="title">Lastname</p>
-      <input type="text" placeholder="Bottino" class="placeholder">
+      <input type="text" [(ngModel)]="dataUser.lastname" [placeholder]="dataUser.lastname" class="placeholder">
     </div>
     <div class="input-mail">
       <p class="title">Mail</p>
-      <input type="text" placeholder="marcosibottino@outlook.com" class="placeholder">
+      <input type="text" [(ngModel)]="dataUser.mail" [placeholder]="dataUser.mail" class="placeholder">
     </div>
     <div class="input-phone">
       <p class="title">Phone</p>
-      <input type="number" placeholder="1159628553" class="placeholder">
+      <input type="string" [(ngModel)]="dataUser.phone" [placeholder]="dataUser.phone" class="placeholder">
     </div>
-    <div class="input-oldpass">
+    <!-- <div class="input-oldpass">
       <p class="title">Old Password</p>
-      <input type="password" placeholder="*****" class="placeholder">
-    </div>
+      <input type="password" placeholder="*****" [(ngModel)]="oldPass" class="placeholder">
+    </div> -->
     <div class="input-newpass">
-      <p class="title">New Password</p>
+      <p class="title" >New Password</p>
       <input type="text" placeholder="*****" class="placeholder">
     </div>
   </div>
+  <button class="submit-btn" type="submit" (click)="guardarDatos()">Actualizar</button>
 </ion-content>
