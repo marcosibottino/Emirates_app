@@ -1,6 +1,6 @@
 # Mi Proyecto de Ionic
 
-Este es un proyecto de Ionic creado para [descripción del proyecto].
+Este es un proyecto de Ionic + Angular.
 
 ## Instalación
 
